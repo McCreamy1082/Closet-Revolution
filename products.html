@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closet Revolution - Product Page</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        /* Add custom CSS styles here */
+        .title{
+            height: 40px;
+            margin: 10px;
+            height: auto;
+            background-color: darkgray;
+
+        }
+        .product {
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            transition: all 0.5s ease;
+            min-height: 500px;
+        }
+
+        .product:hover {
+            transform: scale(1.02);
+        }
+
+        .product img {
+            width: 500px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .bg-orange {
+        background-color: orange !important;
+        }
+        /* Add hover effects to the buttons */
+        .btn {
+            transition: all 0.3s ease-in;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-orange text-white py-3">
+        <h1 class="my-4 text-center">Hi This Is Our Products Page!</h1>
+
+
+
+    </div>
+    <div class="container">
+        
+
+        <div id="1" class="row">
+            <div class="col-md-12 product">
+                <img src="image1.jpeg" alt="Product 1" class="img-fluid rounded" data-toggle="modal" data-target="#imageModal" onclick="showImage(this.src)">
+                <div class="product-info mt-3">
+                    <h2>Product 1</h2>
+                    <h4>$128.99</h4>
+                    <h3>2nd Place ✅</h3>
+                    <p>The Glorius Product 1.</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                    <button class="btn btn-success ml-2">Buy Now</button>
+                </div>
+            </div>
+        </div>
+           
+        <div>
+            <div id="2" class="row">
+                <div class="col-md-12 product">
+                    <img src="image2.jpeg" alt="Product 1" class="img-fluid rounded" data-toggle="modal" data-target="#imageModal" onclick="showImage(this.src)">
+                    <div class="product-info mt-3">
+                        <h2>Product 2</h2>
+                        <h4>$182.99</h4>
+                        <h5>1st Place ✅</h5>
+                        <p>The Best Shirt We Have But is Very Expensive.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                        <button class="btn btn-success ml-2">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <div id="3" class="row">
+                    <div class="col-md-12 product">
+                        <img src="image3.jpeg" alt="Product 1" class="img-fluid rounded" data-toggle="modal" data-target="#imageModal" onclick="showImage(this.src)">
+                        <div class="product-info mt-3">
+                            <h2>Product 3</h2>
+                            <h4>$199.99</h4>
+                            <h5>3rd Place ✅</h5>
+                            <p>Super Expensive.</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-success ml-2">Buy Now</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+    
+                    <div id="3" class="row">
+                        <div class="col-md-12 product">
+                            <img src="image4.jpeg" alt="Product 1" class="img-fluid rounded" data-toggle="modal" data-target="#imageModal" onclick="showImage(this.src)">
+                            <div class="product-info mt-3">
+                                <h2>Product 4</h2>
+                                <h4>$10.99</h4>
+                                <h5>3rd Place ✅</h5>
+                                <p>Nan.</p>
+                                <button class="btn btn-primary">Add to Cart</button>
+                                <button class="btn btn-success ml-2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+        
+                        <div id="3" class="row">
+                            <div class="col-md-12 product">
+                                <img src="image5.jpeg" alt="Product 1" class="img-fluid rounded" data-toggle="modal" data-target="#imageModal" onclick="showImage(this.src)">
+                                <div class="product-info mt-3">
+                                    <h2>Product 5</h2>
+                                    <h4>$12.55</h4>
+                                    <h5>3rd Place ✅</h5>
+                                    <p>Nan.</p>
+                                    <button class="btn btn-primary">Add to Cart</button>
+                                    <button class="btn btn-success ml-2">Buy Now</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+            
+                            <div id="3" class="row">
+                                <div class="col-md-12 product">
+                                    <img src="image6.jpeg" alt="Product 1" class="img-fluid rounded" data-toggle="modal" data-target="#imageModal" onclick="showImage(this.src)">
+                                    <div class="product-info mt-3">
+                                        <h2>Product 3</h2>
+                                        <h4>$200.00</h4>
+                                        <h5>Limited ⚠</h5>
+                                        <button class="btn btn-primary">Add to Cart</button>
+                                        <button class="btn btn-success ml-2">Buy Now</button>
+                                    </div>
+                                </div>
+            <!-- More product elements here... -->
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img id="modalImage" src="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function showImage(src) {
+            document.getElementById('modalImage').src = src;
+        }
+    </script>
+</body>
+
+</html>

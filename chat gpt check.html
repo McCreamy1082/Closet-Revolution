@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closet Revolution - Clothing Store</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="Styles.min.css">
+    <style>
+         .card-img-top {
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.1); /* You can adjust the zoom-out amount as per your preference */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-body {
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px); /* Optional: Add a slight blur effect to the details background */
+            pointer-events: none; /* Prevent the details from blocking hover interactions with the image */
+        }
+
+        .card:hover .card-body {
+            opacity: 1;
+            pointer-events: auto; /* Enable pointer events for buttons when the card is hovered */
+        }
+
+        /* Optional: Add some styles to the cards for better appearance */
+        .card {
+            border: none; /* Remove the default border */
+            position: relative;
+            overflow: hidden; /* Prevent the details from overflowing outside the image */
+        }
+
+        /* Optional: Add some styles to the buttons for better appearance */
+        .btn {
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover .btn {
+            transform: scale(1.1); /* Zoom the buttons when the card is hovered */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 class="mb-0">Closet Revolution</h1>
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#men" class="text-white">Trending</a></li>
+                    <li class="list-inline-item"><a href="#accessories" class="text-white">Recommended</a></li>
+                    <li class="list-inline-item"><a href="#footwear" class="text-white">Latest</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="men" class="py-5">
+        <div class="container">
+            <h3 class="mb-3">Trending</h3>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image1.jpeg" alt="Product 1" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 1</h2>
+                            <p class="card-text">Description of Product 1.</p>
+                            <p class="card-text">Price: $10.00</p>
+                            <a href="products1.html" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image2.jpeg" alt="Product 2" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 2</h2>
+                            <p class="card-text">Description of Product 2.</p>
+                            <p class="card-text">Price: $XX.XX</p>
+                            <a href="products2.html" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="accessories" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="mb-3">Recommended</h3>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image3.jpeg" alt="Product 1" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 1</h2>
+                            <p class="card-text">Description of Product 1.</p>
+                            <p class="card-text">Price: $10.00</p>
+                            <a href="products3.html" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image4.jpeg" alt="Product 2" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 2</h2>
+                            <p class="card-text">Description of Product 2.</p>
+                            <p class="card-text">Price: $XX.XX</p>
+                            <a href="products4.html" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footwear" class="py-5">
+        <div class="container">
+            <h3 class="mb-3">Latest</h3>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image5.jpeg" alt="Product 1" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 1</h2>
+                            <p class="card-text">Description of Product 1.</p>
+                            <p class="card-text">Price: $10.00</p>
+                            <a href="products5.html" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image6.jpeg  " alt="Product 6" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 6</h2>
+                            <p class="card-text">Description of Product 6.</p>
+                            <p class="card-text">Price: $10.00</p>
+                            <a href="products6.html" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Closet Revolution. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Include Bootstrap JavaScript (Optional if you need JS functionalities) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Rubik+Glitch&display=swap" rel="stylesheet">
+        
+        <title>Clothing Store - Product Page</title>
+        <style>
+            /* Add your CSS styles here */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            .product {
+                display: flex;
+            }
+            .product img {
+                transition: all 0.3s ease-in;
+                width: 500px;
+                height: 500px;
+                margin-right: 20px;
+                border-radius: 20px;
+            }
+            
+            .product-details {
+                flex: 1;
+            }
+            .product-title {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .product-description {
+                font-family: 'Raleway', sans-serif;
+                margin-top: 10px;
+                font-size: 16px;
+                border-radius: 12px;
+                background-color: #333;
+                color: #fff;
+            }
+            .product-price {
+                margin-top: 10px;
+                font-size: 20px;
+                color: #007bff;
+                font-weight: bold;
+            }
+            .add-to-cart {
+                font-family: 'Raleway', sans-serif;
+                background: transparent;
+                transition: all 0.3s ease-in;
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #5a0d0d;
+                color: #ffffff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 20px;
+                border-width: 4px;
+                border: 5px solid #000000;
+            }
+            .add-to-cart:hover {
+                transform: translateY(-7.5px);
+                color: #fff;
+                background-color: #000000;
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Clothing Store</h1>
+    </header>
+    <div class="container">
+        <div class="product">
+            <section id="1">
+            <div class="product-details">
+                <div class="product-title">Product 2</div>
+                <img src="image2.jpeg" alt="Product Name">
+                <h2>Description</h2>
+                <div class="product-description">
+                    The Glorius Product 2
+                </div>
+                <div class="product-price">$10.00</div>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart">Buy</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</section>

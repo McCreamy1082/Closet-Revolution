@@ -1,0 +1,223 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closet Revolution - Clothing Store</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="Styles.min.css">
+    <style>
+        /* Your custom styles here */
+        .card-img-top {
+            transition: transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Optional: Add some styles to the cards for better appearance */
+        .card {
+            border: none; /* Remove the default border */
+        }
+        .card-img-top {
+            transition: transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover .btn {
+            transform: scale(1.1);
+        }
+
+        /* Optional: Add some styles to the cards for better appearance */
+        .card {
+            border: none; /* Remove the default border */
+        }
+
+        /* Optional: Add some styles to the buttons for better appearance */
+        .btn {
+            transition: all 0.2s ease-in;
+        }
+        .btn:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closet Revolution - Clothing Store</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="Styles.min.css">
+    <style>
+         .card-img-top {
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-img-top:hover {
+            transform: scale(1.1); /* You can adjust the zoom-out amount as per your preference */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .bg-orange {
+        background-color: orange !important;
+        }
+        .card-body {
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px); /* Optional: Add a slight blur effect to the details background */
+            pointer-events: none; /* Prevent the details from blocking hover interactions with the image */
+        }
+
+        .card:hover .card-body {
+            opacity: 1;
+            pointer-events: auto; /* Enable pointer events for buttons when the card is hovered */
+        }
+
+        /* Optional: Add some styles to the cards for better appearance */
+        .card {
+            border: none; /* Remove the default border */
+            position: relative;
+            overflow: hidden; /* Prevent the details from overflowing outside the image */
+        }
+
+        /* Optional: Add some styles to the buttons for better appearance */
+  
+       
+    </style>
+</head>
+<body>
+    <header class="bg-orange text-white py-3">
+        <div class="container">
+            <h1 class="mb-0">Closet Revolution</h1>
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#men" class="text-white">Home</a></li>
+                    <li class="list-inline-item"><a href="#accessories" class="text-white">Store</a></li>
+                    <li class="list-inline-item"><a href="cart.html" class="text-white">Cart</a></li>
+                    <li class="list-inline-item"><a href="#footwear" class="text-white">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="men" class="py-5">
+        <div class="container">
+            <h3 class="mb-3">Trending</h3>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image1.jpeg" alt="Product 1" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 1</h2>
+                            <p class="card-text">Description of Product 1.</p>
+                            <p class="card-text">Price: $128.99</p>
+                            <a href="http://127.0.0.1:5500/products.html#1" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image2.jpeg" alt="Product 2" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 2</h2>
+                            <p class="card-text">Description of Product 2.</p>
+                            <p class="card-text">Price: $182.99</p>
+                            <a href="http://127.0.0.1:5500/products.html#2" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="accessories" class="py-5 bg-light">
+        <div class="container">
+            <h3 class="mb-3">Recommended</h3>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image3.jpeg" alt="Product 1" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 3</h2>
+                            <p class="card-text">Description of Product 1.</p>
+                            <p class="card-text">Price: $199.99</p>
+                            <a href="http://127.0.0.1:5500/products.html#3" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image4.jpeg" alt="Product 2" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 4</h2>
+                            <p class="card-text">Description of Product 2.</p>
+                            <p class="card-text">Price: $10.99</p>
+                            <a href="http://127.0.0.1:5500/products.html#4" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footwear" class="py-5">
+        <div class="container">
+            <h3 class="mb-3">Latest</h3>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="image5.jpeg" alt="Product 6" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 5</h2>
+                            <p class="card-text">Description of Product 1.</p>
+                            <p class="card-text">Price: $12.55</p>
+                            <a href="http://127.0.0.1:5500/products.html#5" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="data:image/jpeg;base64,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" alt="Product 6" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title">Product 6</h2>
+                            <p class="card-text">Limited Time Offer.</p>
+                            <p class="card-text">Price: $200.00</p>
+                            <a href="http://127.0.0.1:5500/products.html#6" target="_blank" class="btn btn-primary">Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+            
+    </section>
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Closet Revolution. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Include Bootstrap JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+</body>
+</html>
